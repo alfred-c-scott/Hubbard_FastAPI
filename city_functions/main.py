@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 
 Base = automap_base()
 SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/hubbard"
+
 # engine, suppose it has two tables 'user' and 'address' set up
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
