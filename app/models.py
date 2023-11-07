@@ -17,7 +17,7 @@ class City(Base):
     admin_name_2 = Column(String, nullable=False, default='admin_name_2_default')
     admin_code_2 = Column(String, nullable=False, default='admin_code_2_default')
     admin_name_3 = Column(String, nullable=False, default='admin_name_3_default')
-    admin_name_4 = Column(String, nullable=False, default='admin_code_3_default')
+    admin_code_3 = Column(String, nullable=False, default='admin_code_3_default')
     latitude = Column(REAL, nullable=False, server_default='0.0000')
     longitude = Column(REAL, nullable=False, server_default='0.0000')
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
