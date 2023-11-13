@@ -21,3 +21,11 @@ class City(Base):
     latitude = Column(REAL, nullable=False, server_default='0.0000')
     longitude = Column(REAL, nullable=False, server_default='0.0000')
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
+
+class User(Base):
+    __tablename__ = "users"
+
+    email = Column(String, nullable=False, unique=True)
+    password = Column(String, nullable=False)
+    id = Column(Integer, primary_key=True, nullable=False)
+    created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
