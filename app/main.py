@@ -13,10 +13,10 @@ app = FastAPI()
 while True:
 
     try:
-        conn = psycopg2.connect(host='20.168.252.45', 
+        conn = psycopg2.connect(host='127.0.0.1', 
                                 database='Hubbard_Test', 
                                 user='postgres', 
-                                password='wigwag')
+                                password='postgres')
         cursor = conn.cursor()
         print("Database connection was successful")
         break
