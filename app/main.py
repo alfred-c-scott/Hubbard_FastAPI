@@ -4,7 +4,7 @@ import time
 from . import models, schemas, utils
 from .database import engine, get_db
 from sqlalchemy.orm import Session
-from .routers import user, auth
+from .routers import user, auth, city_search
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -26,5 +26,6 @@ while True:
         print("Error: ", error)
         time.sleep(2)
 
+app.include_router(city_search.router)
 app.include_router(user.router)
 app.include_router(auth.router)

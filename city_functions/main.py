@@ -5,7 +5,7 @@ import json
 
 Base = automap_base()
 
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/hubbard"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/Hubbard_Test"
 
 # engine, suppose it has two tables 'user' and 'address' set up
 engine = create_engine(SQLALCHEMY_DATABASE_URL)

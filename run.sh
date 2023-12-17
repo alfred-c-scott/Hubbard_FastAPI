@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-uvicorn app.main:app --reload --port 8001
+port="8000"
+uvicorn app.main:app --reload --port $port
